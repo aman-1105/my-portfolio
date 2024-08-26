@@ -15,3 +15,10 @@ hamburger.addEventListener('click', function () {
         menu.style.display = "block"
     }
 });
+
+document.getElementById("downloadBtn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "./resume.pdf"; // Replace with the path to your PDF file
+    link.download = "resume.pdf"; // Replace with the desired file name
+    link.click();
+});
